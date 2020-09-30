@@ -5,6 +5,7 @@
 int main()
 {
 	int num1,num2;
+	float numdiv1,numdiv2;
 	char oper[10];
 	start:
 	printf("Welcome to Calculator\n1. Addition\n2. Substraction\n3. Mulitiplication\n4. Division");
@@ -28,13 +29,13 @@ int main()
 	else
 	{
 		system("cls");
-		printf("  _   _   _   _   _   _   _     _   _   _   _   _\n / \ / \ / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ \n( E | n | t | e | r | e | d ) ( W | r | o | n | g )\n \_/ \_/ \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \n");
 		goto start;
-		
+
 		return 0;
 	}
 	add:
 	    system("cls");
+	    printf("Addition\n");
 		printf("Enter Two Integers\n");
 		printf("Enter First Number\n");
 		scanf("%d",&num1);
@@ -44,29 +45,32 @@ int main()
 		return 0;
 	sub:
 	    system("cls");
+	    printf("Subtraction\n");
 		printf("Enter Two Integers\n");
 		printf("Enter First Number\n");
 		scanf("%d",&num1);
 		printf("Enter Second Number\n");
 		scanf("%d",&num2);
-		printf("The Result is %d",num1+num2);
+		printf("The Result is %d",num1-num2);
 		return 0;
 	mult:
 	    system("cls");
+	    printf("Multiplication\n");
 		printf("Enter Two Integers\n");
 		printf("Enter First Number\n");
 		scanf("%d",&num1);
 		printf("Enter Second Number\n");
 		scanf("%d",&num2);
-		printf("The Result is %d",num1+num2);
+		printf("The Result is %d",num1*num2);
 		return 0;
 	div:
 	    system("cls");
+	    printf("Division\n");
 		printf("Enter Two Integers\n");
 		printf("Enter First Number\n");
-		scanf("%d",&num1);
+		scanf("%f",&numdiv1);
 		printf("Enter Second Number\n");
-		scanf("%d",&num2);
-		printf("The Result is %d",num1+num2);
+		scanf("%f",&numdiv2);
+		printf("The Result is %.2f",numdiv1/numdiv2);
 		return 0;
 }
